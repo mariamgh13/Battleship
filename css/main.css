@@ -1,0 +1,148 @@
+/* etape 12 changement style */
+
+.chose, .difficulty {
+        margin-left: 8%;
+        box-shadow: 0 4px 8px 0 rgba(5, 9, 22, 0.2);
+        transition: 0.5s;
+        width: 800px;
+        text-align: center;
+        padding: 1%;
+    }
+
+
+.main-container {
+    width: 980px;
+    margin:auto;
+    border: 0px;
+}
+
+.main-container h1 {
+    text-align: center;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.column {
+    box-sizing: border-box;
+    width: 350px;
+    padding: 5px;
+    padding-top: 15px;
+}
+
+.board {
+    box-sizing: border-box;
+    width: 600px;
+    height: 600px;
+    overflow: hidden;    
+    margin: 15px;
+/*    border-right: 1px solid black;
+    border-bottom: 1px solid black;*/
+}
+
+.main-grid, .mini-grid {
+    width: 600px;
+/*    border-top: 1px solid black;
+    border-left: 1px solid black;*/
+    position: relative;
+}
+
+.main-grid div, .mini-grid div {
+    box-sizing: border-box;
+}
+
+.row {
+    border: 0;
+/*    border-bottom: 1px solid black;*/
+    height: 60px;
+}
+
+.cell {
+    float: left;
+    width: 60px;
+    height: 60px;
+    /*border: 0;*/
+    border: 1px solid black;
+}
+
+.mini-grid {
+    transform: scale(0.5) translateX(-250px);
+    margin-top: -150px;
+}
+
+.game-info {
+    overflow: auto;
+    width: 100%;
+    height: 115px;
+    text-align: center;
+}
+
+
+#confirm {
+    text-align: center;
+    display: none;
+}
+
+.btn-container {
+    display: inline-block;
+}
+
+.btn-container .btn {
+    width: 100px;
+    height: 25px;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-container .confirm-ok {
+    background-color: green;
+}
+
+.btn-container .confirm-cancel {
+    background-color: red;
+}
+
+.fleet {
+    text-align: center;
+    margin-top : -60px;
+    margin-bottom: 70px;
+}
+
+.ship {
+    background-image: url('../img/battleship-target-3.gif');
+    background-size: 100% auto;
+    width: 200px;
+    height: 30px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.ship.battleship {
+    background-position: 0 0 ;
+}
+
+.ship.destroyer {
+    background-position: 0 100px;
+}
+
+.ship.submarine {
+    background-position: 0 153px;
+}
+
+.ship.small-ship {
+    background-position: 0 53px;
+}
+
+.ship.sunk {
+    opacity: 0.1;
+}
+
